@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooW</title>
+    <link rel="stylesheet" href="/kursach/styles/style.css">
+    <style>
+        @import url(/kursach/styles/smartphone_style.css) (max-width: 480px);
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="/kursach/index.html" class="zoo"><img src="/kursach/images/ZooW-_2_.svg" alt=""></a>
+        <div class="tel">9950&#9990;</div>
+        <div class="time">9.00-21.00</div>
+    </header>
+
+
+    <div class="pitom">Выбирете товары для
+        вашего питомца:</div>
+    <div class="jivotnie">
+        <img src="/kursach/images/dog-face-svgrepo-com.svg" alt="" class="dog" onclick="HTMLDog()">
+        <img src="/kursach/images/cat-face-svgrepo-com.svg" alt="" class="cat" onclick="HTMLCat()">
+        <img src="/kursach/images/rabbit-easter-svgrepo-com.svg" alt="" class="rabbit" onclick="HTMLRodent()">
+        <img src="/kursach/images/bird-svgrepo-com.svg" alt="" class="bird" onclick="HTMLBird()">
+        <img src="/kursach/images/fish-svgrepo-com.svg" alt="" class="fish" onclick="HTMLFish()">
+    </div>
+    <aside id="products"></aside>
+    <div class="actiskid">Акции и скидки </div>
+    <aside class="acttovary"></aside>
+
+    
+
+    <aside id="forma"></aside>
+    <div id="popcat">Популярные категории:</div>
+    <div id="popular_category">
+
+        <div id="ruletki_for_dogs">
+            <img src="/kursach/images/TrixieShampun.jpg" alt="" class="imgpopcat" onclick="HTMLDogHygiene()">
+            <div class="categ_of_tovar">Гигиена</div>
+            <div class="categ_of_animals">Собаки</div>
+        </div>
+        <div id="korm_for_dogs">
+            <img src="/kursach/images/RoyalCAninGermanShepherd.jpg" alt="" class="imgpopcat" onclick="HTMLDogFood()">
+            <div class="categ_of_tovar">Корм</div>
+            <div class="categ_of_animals">Собаки</div>
+        </div>
+        <div id="korm_for_cats">
+            <img src="/kursach/images/korm_for_cats.webp" alt="" class="imgpopcat" onclick="HTMLCatFood()">
+            <div class="categ_of_tovar">Корм</div>
+            <div class="categ_of_animals">Коты</div>
+        </div>
+        <div id="kletki_for_grizuni">
+            <img src="/kursach/images/kletka_for_grizuni.webp" alt="" class="imgpopcat" onclick="HTMLRodentHouses()">
+            <div class="categ_of_tovar">Клетки</div>
+            <div class="categ_of_animals">Грызуны</div>
+        </div>
+        <div id="akvariumi">
+            <img src="/kursach/images/akvarium.jpg" alt="" class="imgpopcat" onclick="HTMLFishHouses()">
+            <div class="categ_of_tovar">Аквариумы</div>
+            <div class="categ_of_animals">Рыбы</div>
+        </div>
+    </div>
+    <div id="kategoryi"></div>
+    <div id="brends">Наши партнеры</div>
+    <div id="partners">
+
+        <a href="https://www.royalcanin.com/ru"><img src="/kursach/images/royal-canin-seeklogo.com.svg" alt=""></a>
+        <a href="https://happy-dog.ru/"><img src="/kursach/images/happyDog.svg" alt=""></a>
+        <a href="https://www.proplan.ru/"><img src="/kursach/images/pro-plan-seeklogo.com.svg" alt=""></a>
+        <a href="https://whiskas.ru/"><img src="/kursach/images/whiskas.svg" alt=""></a>
+
+
+    </div>
+    <footer>
+        <div id="about_camp">О компании:</div>
+        <div id="news" onclick="alert('На данный момент новостей нет')">Новости</div>
+        <a href="/kursach/deliver.html" id="dostavka">Доставка</a>
+        <a href="/kursach/o_nas.html" id="about_us">О нас</a>
+        <div id="left_line"></div>
+        <div id="vash_city">Наш адрес:</div>
+        <a href="/kursach/map.html" id="minsk">220006 г. Минск, ул.Сведлова 19 </a>
+        <a href="https://instagram.com/sh1mpa98?igshid=ZDdkNTZiNTM="><img src="/kursach/images/icons8-instagram.svg"
+                alt="" id="instagram"></a>
+        <a href="https://vk.com/id480992338"><img src="/kursach/images/vk-120.svg" alt="" id="vk"></a>
+
+        <div id="right_line"></div>
+        <div id="num_fut">9950</div>
+        <div id="time_fut">9.00-22.00</div>
+    </footer>
+
+
+
+
+    <script src="./constants/catalog.js"></script>
+    <script src="./constants/root.js"></script>
+
+
+
+    <script src="./components/products_na_aktii/products_na_aktii.js"></script>
+    <link rel="stylesheet" href="./components/products_na_aktii/products_na_aktii.css">
+
+    <script src="./components/products/products.js"></script>
+</body>
+
+</html>
